@@ -1,0 +1,46 @@
+/* === Blinkit-style slick arrows === */
+.slick-prev,
+.slick-next {
+  width: 32px;
+  height: 32px;
+  background-color: white !important;   /* white circle */
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* soft shadow */
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+/* black arrow icons */
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;      /* black arrow */
+  font-size: 18px !important;
+  opacity: 1 !important;
+}
+
+/* hover effect: subtle scale */
+.slick-prev:hover,
+.slick-next:hover {
+  transform: scale(1.1);
+  background-color: #fff !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* proper positioning (Blinkit-like overlap) */
+.slick-prev {
+  left: -15px !important;
+}
+.slick-next {
+  right: -15px !important;
+}
+
+/* reduce space between cards */
+#homeSlider .slick-slide {
+  padding: 0 4px;
+}
